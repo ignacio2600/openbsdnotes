@@ -7,25 +7,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <main>
-        <section class="hero">
+
+    <!-- ======================================
+         HEADER
+         ====================================== -->
+    <header class="site-header">
+        <div class="header-container">
             <h1>OpenBSD Notes</h1>
             <h2>Building secure, scalable web applications with modern technologies</h2>
-        </section>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-        
+    <main>
+        <!-- ======================================
+             TECHNOLOGY STACK
+             ====================================== -->
         <section class="tech-stack">
             <h3>Technology Stack</h3>
             <div class="tech-grid">
@@ -36,27 +40,42 @@
                 <div>Systems: OpenBSD, Linux</div>
             </div>
         </section>
-        
+
+        <!-- ======================================
+             FEATURED PROJECTS
+             ====================================== -->
         <section class="projects-preview">
             <h3>Featured Projects</h3>
             <div class="project-cards">
+                
                 <div class="project-card">
                     <h4>OpenBSD Learning Journey</h4>
                     <p>Documentation and tutorials for OpenBSD administration</p>
+                    <div class="tech-used">
+                        <strong>Technologies Used:</strong> OpenBSD, HTML, CSS, Markdown
+                    </div>
                     <a href="projects.html#openbsd">View Details</a>
                 </div>
-                
+
                 <div class="project-card">
                     <h4>Full-Stack Portfolio API</h4>
                     <p>RESTful API built with Node.js, Express, and MySQL</p>
+                    <div class="tech-used">
+                        <strong>Technologies Used:</strong> Node.js, Express.js, MySQL, GitHub Pages
+                    </div>
                     <a href="projects.html">View Details</a>
                 </div>
+
             </div>
         </section>
     </main>
-    
+
+    <!-- ======================================
+         FOOTER
+         ====================================== -->
     <footer>
-        <p>&copy; 2025 Ignacio. Built with GitHub Pages, Railway, and PlanetScale.</p>
+        <p>&copy; 2025 OpenBSD Notes. Built with GitHub Pages, Railway, and PlanetScale.</p>
     </footer>
+
 </body>
 </html>
