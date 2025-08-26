@@ -1,164 +1,174 @@
-/* ====================================== 
-   SIMPLE GRAY WEBSITE THEME
+/* ======================================
+   RESET AND BASE STYLES
    ====================================== */
-
-/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Base */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: #cccccc;
-    background-color: #111;
+    background-color: #111; /* Dark gray background */
 }
 
-/* Header & Navigation */
-header {
-    background: #222;
+/* ======================================
+   SITE HEADER
+   ====================================== */
+.site-header {
+    background: #111;
+    padding: 20px 0;
+    text-align: center; /* Center title and tagline */
     border-bottom: 1px solid #333;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
 }
 
-nav {
-    max-width: 1200px;
+.header-container {
+    max-width: 900px;
     margin: 0 auto;
-    padding: 0 20px;
 }
 
-nav ul {
+.site-header h1 {
+    font-size: 2rem;
+    color: #cccccc;
+    margin-bottom: 5px;
+}
+
+.site-header h2 {
+    font-size: 1rem;
+    font-style: italic; /* Italic tagline */
+    color: #aaaaaa;
+    margin-bottom: 15px;
+}
+
+/* Navigation inside header */
+.site-header nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 60px;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
 }
 
-nav li {
-    margin: 0 15px;
-}
-
-nav a {
+.site-header nav a {
     color: #aaaaaa;
     text-decoration: none;
     font-weight: 500;
-    font-size: 16px;
-    padding: 10px 20px;
-    border-radius: 5px;
+    padding: 5px 10px;
     transition: color 0.3s ease;
 }
 
-nav a:hover,
-nav a.active {
+.site-header nav a:hover,
+.site-header nav a.active {
     color: #ffffff;
 }
 
-/* Main Content */
+/* ======================================
+   MAIN CONTENT
+   ====================================== */
 main {
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px 20px;
+    margin: 40px auto;
+    padding: 0 20px;
 }
 
-/* Hero Section */
-.hero {
-    text-align: center;
-    background: #222;
-    padding: 60px 40px;
-    border: 1px solid #333;
-    border-radius: 10px;
-    margin-bottom: 40px;
-    max-width: 900px;
-}
-
-.hero h1 {
-    font-size: 3rem;
-    color: #cccccc;
-    margin-bottom: 8px;
-    font-weight: bold;
-}
-
-.hero h2 {
-    font-size: 1.1rem;
-    font-style: italic;
-    color: #aaaaaa;
-    margin-bottom: 15px;
-    font-weight: normal;
-}
-
-/* Sections / Cards */
-section, .tech-stack, .projects-preview, .skills-category, .project, .bio, .interests, .contact-info, .contact-form, .contact-links, .intro, .notes-section, .resources, .notes-placeholder {
+/* ======================================
+   TECHNOLOGY STACK
+   ====================================== */
+.tech-stack {
     background: #222;
     border: 1px solid #333;
     border-radius: 8px;
-    padding: 30px;
+    padding: 20px;
     margin-bottom: 40px;
 }
 
-/* Headings */
-h1, h2, h3, h4 {
+.tech-stack h3 {
     color: #cccccc;
+    font-size: 1.5rem;
     margin-bottom: 20px;
+    text-align: center;
 }
 
-/* Paragraphs */
-p {
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.tech-grid div {
+    background: #333;
+    padding: 15px;
+    border-radius: 5px;
+    color: #cccccc;
+    text-align: center;
+}
+
+/* ======================================
+   FEATURED PROJECTS
+   ====================================== */
+.projects-preview {
+    margin-bottom: 40px;
+}
+
+.projects-preview h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #cccccc;
+    margin-bottom: 30px;
+}
+
+.project-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.project-card {
+    background: #222;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 20px;
     color: #cccccc;
 }
 
-/* Lists */
-ul, li {
-    color: #cccccc;
+.project-card h4 {
+    margin-bottom: 10px;
 }
 
-/* Links */
-a {
-    color: #aaaaaa;
-    transition: color 0.3s ease;
+.project-card p {
+    margin-bottom: 10px;
 }
 
-a:hover {
-    color: #ffffff;
+.project-card .tech-used {
+    background: #222;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border-left: 3px solid #444;
+    margin-bottom: 10px;
+    font-size: 0.95rem;
 }
 
-/* Buttons */
-button, .project-card a, .project-links a {
+.project-card a {
     display: inline-block;
     background: #333;
     color: #cccccc;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
-    font-weight: 500;
-    border: 1px solid #444;
-    transition: background 0.3s ease, color 0.3s ease;
+    transition: background 0.3s ease;
 }
 
-button:hover, .project-card a:hover, .project-links a:hover {
+.project-card a:hover {
     background: #444;
     color: #ffffff;
 }
 
-/* Project & Tech Cards */
-.project-card, .tech-grid div, .skill, .learning-list li {
-    background: #222;
-    border: 1px solid #333;
-    padding: 20px;
-    border-radius: 8px;
-    transition: background 0.3s ease;
-}
-
-.project-card:hover, .tech-grid div:hover, .skill:hover, .learning-list li:hover {
-    background: #333;
-}
-
-/* Footer */
+/* ======================================
+   FOOTER
+   ====================================== */
 footer {
     background: #222;
     color: #cccccc;
@@ -167,31 +177,16 @@ footer {
     border-top: 1px solid #333;
 }
 
-/* Responsive */
+/* ======================================
+   RESPONSIVE DESIGN
+   ====================================== */
 @media (max-width: 768px) {
-    nav ul {
+    .site-header nav ul {
         flex-direction: column;
-        height: auto;
-        padding: 10px 0;
-    }
-    
-    nav li {
-        margin: 5px 0;
-    }
-    
-    .hero h1 {
-        font-size: 2.2rem;
-    }
-    
-    .hero h2 {
-        font-size: 1rem;
+        gap: 10px;
     }
 
-    main {
-        padding: 20px 15px;
-    }
-
-    .hero, .tech-stack, .projects-preview, .skills-category, .project, .bio, .interests, .contact-info, .contact-form, .contact-links, .intro, .notes-section, .resources, .notes-placeholder {
-        padding: 25px 20px;
+    .tech-grid, .project-cards {
+        grid-template-columns: 1fr;
     }
 }
