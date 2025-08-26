@@ -76,15 +76,22 @@ nav a:hover {
 .hero h1 {
     font-size: 3rem;
     color: #00ff66;
-    text-shadow: 0 0 15px #00ff66;
-    margin-bottom: 10px;
+    text-shadow: 
+        0 0 5px rgba(0, 255, 102, 0.6),
+        0 0 10px rgba(0, 255, 102, 0.4);
+    margin-bottom: 8px; /* slightly closer spacing */
+    font-weight: bold;
 }
 
 .hero h2 {
-    font-size: 1.5rem;
+    font-size: 1.1rem;      /* smaller tagline */
+    font-style: italic;      /* italic for slogan */
     color: #00e6e6;
-    text-shadow: 0 0 10px #00e6e6;
-    margin-bottom: 20px;
+    text-shadow: 
+        0 0 3px rgba(0, 230, 230, 0.5),
+        0 0 6px rgba(0, 230, 230, 0.2); /* soft glow */
+    margin-bottom: 15px;    /* spacing below tagline */
+    font-weight: normal;
 }
 
 /* Cards & Sections */
