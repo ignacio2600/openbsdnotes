@@ -1,0 +1,21 @@
+       # Environment variables
+       .env
+       .env.local
+       .env.production
+       config.js
+       
+       # Database configs
+       database.config.js
+       db-credentials.json
+       
+       # API keys
+       api-keys.txt
+       keys/
+       
+       # Dependencies
+       node_modules/
+       *.log
+       
+       # OS files
+       .DS_Store
+       Thumbs.db
