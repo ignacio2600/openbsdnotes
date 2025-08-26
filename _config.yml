@@ -1,7 +1,7 @@
 remote_theme: pages-themes/hacker@v0.2.0
 title: OpenBSD Notes
 description: My collection of OpenBSD notes and documentation
-baseurl: "/openbsdnotes"
+baseurl: ""
 url: "https://ignacio2600.github.io"
 
 plugins:
