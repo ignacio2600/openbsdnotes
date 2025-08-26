@@ -1,3 +1,4 @@
 theme: jekyll-theme-hacker
 title: OpenBSD Notes
 description: My collection of OpenBSD notes and documentation
+baseurl: "/openbsdnotes"
